@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Layout</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: grid;
+      grid-template-rows: auto auto 1fr auto;
+      gap: 10px;
+      padding: 10px;
+      min-height: 100vh;
+      background: #fff;
+    }
+
+    header {
+      background: #e9ecef;
+      padding: 30px;
+      text-align: center;
+    }
+
+    nav {
+      background: #e9ecef;
+      padding: 20px;
+      text-align: center;
+    }
+
+    section {
+      display: grid;
+      grid-template-columns: 220px 1fr 220px;
+      gap: 10px;
+    }
+
+    aside {
+      background: #e9ecef;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 400px;
+    }
+
+    main {
+      background: #e9ecef;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 400px;
+    }
+
+    footer {
+      background: #e9ecef;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>Header</header>
+
+  <nav>Navigation Menu</nav>
+
+  <section>
+    <aside>Content</aside>
+    <main>Main Content</main>
+    <aside>Content</aside>
+  </section>
+
+  <footer>Footer</footer>
+
+</body>
+</html>
